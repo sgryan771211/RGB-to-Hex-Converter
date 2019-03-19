@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RGB to Hex Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div><label class="color red" for="">R</label></div>
+    <div><input type="range" min="0" max="255" value="0" id="r" onchange="change()"></div>
+    <div><label class="value red" id="r-label">0</label></div>
+
+    <div><label class="color green" for="">G</label></div>
+    <div><input type="range" min="0" max="255" value="0" id="g" onchange="change()"></div>
+    <div><label class="value green" id="g-label">0</label></div>
+
+    <div><label class="color blue" for="">B</label></div>
+    <div><input type="range" min="0" max="255" value="0" id="b" onchange="change()"></div>
+    <div><label class="value blue" id="b-label">0</label></div>
+
+    <div class="item">
+      <h1 id="hex-label">#000000</h1>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
